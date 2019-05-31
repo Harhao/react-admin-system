@@ -1,4 +1,12 @@
 .entryWrap{
+  min-width: 1200px;
   width: 100vw;
   height: 100vh;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
 }
