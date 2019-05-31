@@ -20,8 +20,6 @@ function reducer(state = initialState, action) {
             return {
                 count: state.count
             };
-
-
     }
 }
 export default reducer;

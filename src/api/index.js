@@ -1,7 +1,9 @@
 import axios from "axios";
-import {fakeAuth} from '../util/fakeAuth';
 import {
-    message
+    fakeAuth
+} from '../util/fakeAuth';
+import {
+    message as Message
 } from 'antd';
 import {
     timeout,
@@ -34,7 +36,7 @@ axios.interceptors.response.use(
                 error.response.status == 401 ?
                 "登录过期，请重新登录" :
                 "服务器异常";
-            message.error(message);
+            Message.error(message);
         }
         return Promise.reject(error);
     }
