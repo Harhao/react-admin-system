@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
 import { Layout, Menu, Icon } from 'antd';
 import Logo from '../../assets/images/logo.svg';
+import './index.css';
 const { Sider } = Layout;
 const {SubMenu } = Menu;
 export default class SiderNav extends Component{
@@ -28,6 +29,7 @@ export default class SiderNav extends Component{
                 >
                     <div className="logoIcon">
                         <img src={Logo} alt="system" className ="Icon"/>
+                        <span className="title">React System</span>
                     </div>
                     <Menu
                         defaultSelectedKeys={['1']}
