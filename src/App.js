@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/echo">
+    <Router basename="/ant">
       <div className="entryWrap">
       <CSSTransition
         classNames="fade"
