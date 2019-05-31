@@ -9,5 +9,5 @@
 }
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-in;
+  transition: opacity 0.4s  ease-in-out;
 }

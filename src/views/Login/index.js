@@ -1,5 +1,6 @@
 import React,{Component } from 'react';
-import { Form, Icon, Input, Button, Checkbox } from 'antd';
+import { Form, Icon, Input, Button, Checkbox ,message} from 'antd';
+import {fakeAuth} from '../../util/fakeAuth';
 import loginBg from '../../assets/images/login_bg.svg';
 import Logo from '../../assets/images/logo.svg';
 import Name from '../../assets/images/name.svg';
@@ -10,7 +11,10 @@ class Login extends Component{
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
           if (!err) {
-            console.log('Received values of form: ', values);
+            fakeAuth.isAuthenticated = true; 
+            this.props.history.push('/');
+            message.success('登陆成功',1);
+            return;
           }
         });
     };
@@ -71,6 +75,4 @@ class Login extends Component{
         )
     }
 }
-
-
 export default Form.create({ name: 'login' })(Login);

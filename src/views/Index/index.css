@@ -1,0 +1,24 @@
+.ant-layout {
+    height: 100%;
+}
+
+.logoIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+}
+
+.logoIcon .Icon {
+    width: 35px;
+    height: 35px;
+}
+.navTitle a{
+    color: #fff;
+}
+#components-layout-demo-responsive .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
