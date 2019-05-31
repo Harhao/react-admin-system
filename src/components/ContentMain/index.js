@@ -7,10 +7,12 @@ import Basic from '../../views/Basic';
 class ContentMain extends Component{
     render(){
         return(
-            <Switch>
-                <PrivateRoute path="/" exact component = {DataChart}/>
-                <PrivateRoute path="/basic" exact component = {Basic}/>
-            </Switch>
+            <div className="routeWrap">
+                <Switch>
+                    <PrivateRoute path="/dataCount" exact component = {DataChart}/>
+                    <PrivateRoute path="/basic" exact component = {Basic}/>
+                </Switch>
+            </div>
         )
     }
 }
