@@ -20,7 +20,7 @@ function App() {
           >
             <Switch>
               <Route path="/login" component={Login} exact/>
-              <PrivateRoute path="/" component={Index} exact/>
+              <PrivateRoute path="/" component={Index}/>
               <Route component={NoMatch}/>
             </Switch>
           </CSSTransition>

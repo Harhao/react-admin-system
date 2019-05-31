@@ -45,16 +45,18 @@ export default class SiderNav extends Component{
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="2">
-                            <Icon type="desktop" />
-                            <span className="navTitle">
-                                <Link to="/basic">
+                            <Link to="/basic">
+                                <Icon type="desktop" />
+                                <span className="navTitle">
                                     基本组件
-                                </Link>
-                            </span>
+                                </span>
+                            </Link>
                         </Menu.Item>
                         <Menu.Item key="3">
-                            <Icon type="inbox" />
-                            <span>输入组件</span>
+                            <Link to="/form">
+                                <Icon type="inbox" />
+                                <span>输入组件</span>
+                            </Link>
                         </Menu.Item>
                         <SubMenu
                             key="sub2"
@@ -65,11 +67,18 @@ export default class SiderNav extends Component{
                             </span>
                             }
                         >
-                            <Menu.Item key="9">Alert警告提示</Menu.Item>
-                            <Menu.Item key="10">Message全局提示</Menu.Item>
+                            <Menu.Item key="9">
+                                <Link to="/alert">Alert警告提示</Link>
+                            </Menu.Item>
+                            <Menu.Item key="10">
+                                <Link to="/message">Message全局提示</Link>
+                            </Menu.Item>
                             <SubMenu key="sub3" title="加载提示">
-                                <Menu.Item key="11">Spin加载中</Menu.Item>
-                                <Menu.Item key="12">Progress进度条</Menu.Item>
+                                <Menu.Item key="11">
+                                    <Link to="/spin">Spin加载中</Link></Menu.Item>
+                                <Menu.Item key="12">
+                                    <Link to="progress">Progress进度条</Link>
+                                </Menu.Item>
                             </SubMenu>
                         </SubMenu>
                     </Menu>
