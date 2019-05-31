@@ -11,7 +11,7 @@ class Login extends Component{
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
           if (!err) {
-            fakeAuth.isAuthenticated = true; 
+            fakeAuth.setToken("zxcvbnmasdfghjkl");
             this.props.history.push('/');
             message.success('登陆成功',1);
             return;

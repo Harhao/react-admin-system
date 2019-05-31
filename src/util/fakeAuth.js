@@ -1,11 +1,13 @@
 export const fakeAuth = {
-    isAuthenticated: false,
-    authenticate(cb) {
-        this.isAuthenticated = true;
-        setTimeout(cb, 100);
+    authenticate() {
+        const token = sessionStorage.getItem("loginToken");
+        return !!token ? true : false;
     },
-    signout(cb) {
-        this.isAuthenticated = false;
-        setTimeout(cb, 100);
+    setToken(token) {
+        sessionStorage.setItem("loginToken", token);
+        return true;
+    },
+    signout() {
+        sessionStorage.removeItem('loginItem');
     }
 };

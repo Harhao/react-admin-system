@@ -1,5 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {Provider} from 'react-redux';
+import {store} from './redux/index.js';
 import {CSSTransition } from "react-transition-group";
 import Login from './views/Login';
 import Index from './views/Index';
@@ -9,20 +11,22 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/ant">
-      <div className="entryWrap">
-      <CSSTransition
-        classNames="fade"
-        timeout={300}
-      >
-        <Switch>
-          <Route path="/login" exact component={Login}/>
-          <PrivateRoute path="/" component={Index} exact/>
-          <Route component={NoMatch}/>
-        </Switch>
-      </CSSTransition>
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router basename="/ant">
+        <div className="entryWrap">
+          <CSSTransition
+            classNames="fade"
+            timeout={300}
+          >
+            <Switch>
+              <Route path="/login" component={Login} exact/>
+              <PrivateRoute path="/" component={Index} exact/>
+              <Route component={NoMatch}/>
+            </Switch>
+          </CSSTransition>
+        </div>
+      </Router>
+    </Provider>
   );
 }
 
