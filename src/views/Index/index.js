@@ -16,8 +16,8 @@ export default class Index extends Component {
                 </Header>
                 <Content style={{ margin: '24px 16px 0' }}>
                     <ContentMain/>
-                </Content>
-                <Footer style={{ textAlign: 'center' }} className="clearfix">admin system ©2019 Created by Harhao</Footer>
+                    <Footer style={{ textAlign: 'center'}}>admin system ©2019 Created by Harhao</Footer>
+                </Content>              
             </Layout>
         </Layout>
     );

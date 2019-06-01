@@ -3,6 +3,7 @@ import Charts from '../../components/Chart';
 import Diagram from '../../components/Diagram';
 import Line from '../../components/Line';
 import Map from '../../components/Map';
+import AreaMap from '../../components/AreaMap';
 import './index.css';
 export default class DataChart extends Component{
     render(){
@@ -20,6 +21,9 @@ export default class DataChart extends Component{
                     </div>
                     <div className="chart">
                         <Line/>
+                    </div>
+                    <div className="chart">
+                        <AreaMap/>
                     </div>
                 </div>
             </div>

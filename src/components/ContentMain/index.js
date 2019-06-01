@@ -8,7 +8,7 @@ import Message from '../../views/Message';
 import Alert from '../../views/Alert';
 import Spin from '../../views/Spin';
 import Progress from '../../views/Progress';
-
+import './index.css';
 class ContentMain extends Component{
     render(){
         return(

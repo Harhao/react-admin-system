@@ -30,9 +30,15 @@
 .codeSection .example {
     padding: 2rem 0 2rem 2rem;
 }
-.codeSection .intro{
-    padding-left:5%;
-    margin-top:1.5rem;
+
+.codeSection .intro {
+    padding-left: 5%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.codeSection .usage{
+    border-top:1px dashed #ebedf0;
+    padding-left: 5%;
 }
 .example .btn {
     margin-right: 0.5rem;
@@ -60,4 +66,11 @@
 .split .desc {
     width: 20%;
     text-align: center;
+}
+
+.clearfix:after {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
 }

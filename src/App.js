@@ -14,7 +14,6 @@ function App() {
     <Provider store={store}>
       <Router basename="/echo">
           <div className="entryWrap">
-
               <CSSTransition
                 classNames="fade"
                 timeout={1000}

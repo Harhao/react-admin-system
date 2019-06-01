@@ -50,7 +50,7 @@ export default class SiderNav extends Component{
                             <Link to="/basic">
                                 <Icon type="desktop" />
                                 <span className="navTitle">
-                                    基本组件
+                                    数据组件
                                 </span>
                             </Link>
                         </Menu.Item>
@@ -58,6 +58,18 @@ export default class SiderNav extends Component{
                             <Link to="/form">
                                 <Icon type="inbox" />
                                 <span>输入组件</span>
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="5">
+                            <Link to="/form">
+                                <Icon type="folder" />
+                                <span>axios封装</span>
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="6">
+                            <Link to="/form">
+                                <Icon type="link" />
+                                <span>react-router</span>
                             </Link>
                         </Menu.Item>
                         <SubMenu

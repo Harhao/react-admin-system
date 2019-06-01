@@ -24,7 +24,7 @@ export default class Message extends Component{
                <div className="labelTitle">
                     Message全局提示
                </div>
-               <div className="displayCode">
+               <div className="displayCode clearfix">
                     <div className="codeSection">
                         <div className="example">
                             <Button onClick={(e) =>this.info('')} className="btn" type="primary">info</Button>
@@ -37,6 +37,7 @@ export default class Message extends Component{
                         <div className="intro">
                             信息提示反馈。
                         </div>
+                        <div className="usage">使用方法</div>
                     </div>
                     <div className="codeSection">
                         <div className="example">
@@ -52,6 +53,7 @@ export default class Message extends Component{
                         <div className="intro">
                             包括成功、失败、警告。
                         </div>
+                        <div className="usage">使用方法</div>
                     </div>
                     <div className="codeSection">
                         <div className="example">
@@ -65,6 +67,7 @@ export default class Message extends Component{
                         <div className="intro">
                            自定义时长为10s,默认时长为10s。
                         </div>
+                        <div className="usage">使用方法</div>
                     </div>
                     <div className="codeSection">
                         <div className="example">
@@ -78,6 +81,7 @@ export default class Message extends Component{
                         <div className="intro">
                             进行全局 loading，异步自行移除。
                         </div>
+                        <div className="usage">使用方法</div>
                     </div>
                     <div className="codeSection">
                         <div className="example">
@@ -91,6 +95,7 @@ export default class Message extends Component{
                         <div className="intro">
                             进行全局 loading，异步自行移除。
                         </div>
+                        <div className="usage">使用方法</div>
                     </div>
                </div>
             </div>
