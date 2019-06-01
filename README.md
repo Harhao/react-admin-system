@@ -1,3 +1,29 @@
 ## React-Admin-System
 
-##### 开发环境：
+#### 一、开发环境
+  ```
+    操作系统：Window 10
+    React版本：v16.8.6
+    Node版本：v8.11.1
+    AntDesign:v3.19.2
+    react-redux: v7.0.3
+    react-router-dom: v5.0.0
+  ```
+#### 二、现阶段运行效果
+1.登录
+![login](https://github.com/Harhao/react-admin-system/blob/master/screenShot/login.png)
+2.图表展示
+![dataChart](https://github.com/Harhao/react-admin-system/blob/master/screenShot/index.png)
+#### 三、安装依赖并运行程序
+
+1.进入项目根目录，安装依赖:尽量使用cnpm安装项目依赖，npm安装比较慢，而且容易出现安装失败情况
+```bash
+  cnpm install
+```
+2.运行以下命令启动程序
+ 
+```bash
+  npm start
+```
+## License
+[MIT](http://opensource.org/licenses/MIT)
