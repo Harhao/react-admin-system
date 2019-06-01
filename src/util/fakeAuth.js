@@ -9,5 +9,6 @@ export const fakeAuth = {
     },
     signout() {
         sessionStorage.removeItem('loginToken');
+
     }
 };
