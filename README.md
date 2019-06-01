@@ -5,9 +5,9 @@
     操作系统：Window 10
     React版本：v16.8.6
     Node版本：v8.11.1
-    AntDesign:v3.19.2
-    react-redux: v7.0.3
-    react-router-dom: v5.0.0
+    AntDesign版本:v3.19.2
+    react-redux版本: v7.0.3
+    react-router-dom版本: v5.0.0
   ```
 #### 二、现阶段运行效果
 1.登录
