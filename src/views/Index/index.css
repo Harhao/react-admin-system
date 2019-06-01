@@ -22,3 +22,9 @@
     background: rgba(255, 255, 255, 0.2);
     margin: 16px;
 }
+.clearfix:before {
+    content: '.';
+    height: 0;
+    display: block;
+    clear: both;
+}

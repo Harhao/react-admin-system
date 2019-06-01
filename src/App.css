@@ -1,6 +1,5 @@
 @import '~antd/dist/antd.css';
 .entryWrap{
-  min-width: 1200px;
   width: 100vw;
   height: 100vh;
 }
@@ -9,5 +8,5 @@
 }
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 0.4s  ease-in-out;
+  transition: opacity 0.8s  ease-in-out;
 }

@@ -13,7 +13,7 @@ class LoginForm extends Component{
         this.props.form.validateFields((err, values) => {
           if (!err) {
             fakeAuth.setToken("zxcvbnmasdfghjkl");
-            this.props.history.push('/');
+            this.props.history.push('/dataCount');
             message.success('登陆成功',1);
             return;
           }

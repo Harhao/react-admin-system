@@ -16,7 +16,7 @@ function App() {
         <div className="entryWrap">
           <CSSTransition
             classNames="fade"
-            timeout={300}
+            timeout={1000}
           >
             <Switch>
               <Route path="/login" component={Login} exact/>

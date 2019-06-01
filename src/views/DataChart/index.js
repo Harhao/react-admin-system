@@ -1,22 +1,27 @@
 import React,{Component} from 'react';
-import {gl_ajax} from '../../api/index.js';
+import Charts from '../../components/Chart';
+import Diagram from '../../components/Diagram';
+import Line from '../../components/Line';
+import Map from '../../components/Map';
+import './index.css';
 export default class DataChart extends Component{
-    handleClick = ()=>{
-        gl_ajax({
-            method:'get',
-            url:'/todolist',
-            data:{},
-            success(res){},
-            error(err){
-                console.log(err);
-            }
-        });
-    }
     render(){
         return (
-            <div>
-                data Chart
-                <button onClick={this.handleClick}>发送请求</button>
+            <div className="chartWrap clearfix">
+                <div className="row clearfix">
+                    <div className="chart">
+                        <Charts/>
+                    </div>
+                    <div className="chart">
+                        <Diagram/>
+                    </div>
+                    <div className="chart">
+                        <Map/>
+                    </div>
+                    <div className="chart">
+                        <Line/>
+                    </div>
+                </div>
             </div>
         )
     }

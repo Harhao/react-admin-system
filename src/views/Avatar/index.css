@@ -1,0 +1,13 @@
+.userInfo {
+    box-sizing: border-box;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+    cursor: pointer;
+}
+.userInfo .label {
+    padding: 0 0.8rem;
+}

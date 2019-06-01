@@ -8,6 +8,6 @@ export const fakeAuth = {
         return true;
     },
     signout() {
-        sessionStorage.removeItem('loginItem');
+        sessionStorage.removeItem('loginToken');
     }
 };
