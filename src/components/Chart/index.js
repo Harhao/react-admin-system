@@ -16,7 +16,7 @@ export default class Charts extends Component{
             genre: { alias: '游戏种类' }
           }
         return(
-            <Chart width={500} height={350} data={data} scale={cols}>
+            <Chart width={450} height={350} data={data} scale={cols}>
                 <Axis name="genre" title/>
                 <Axis name="sold" title/>
                 <Legend position="top" dy={-20} />

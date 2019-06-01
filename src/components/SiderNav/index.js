@@ -29,7 +29,7 @@ export default class SiderNav extends Component{
                 >
                     <div className="logoIcon">
                         <img src={Logo} alt="system" className ="Icon"/>
-                        <span className="title">React System</span>
+                        <span className="title">RtSystem</span>
                     </div>
                     <Menu
                         defaultSelectedKeys={['1']}
