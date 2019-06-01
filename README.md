@@ -10,9 +10,12 @@
     react-router-dom版本: v5.0.0
   ```
 #### 二、现阶段运行效果
-1.登录
+- 登录
+
 ![login](https://github.com/Harhao/react-admin-system/blob/master/screenShot/login.png)
-2.图表展示
+
+- 图表展示
+
 ![dataChart](https://github.com/Harhao/react-admin-system/blob/master/screenShot/index.png)
 #### 三、安装依赖并运行程序
 
