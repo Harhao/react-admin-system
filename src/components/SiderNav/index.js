@@ -75,13 +75,17 @@ export default class SiderNav extends Component{
                             <Menu.Item key="10">
                                 <Link to="/message">Message全局提示</Link>
                             </Menu.Item>
-                            <SubMenu key="sub3" title="Loading加载提示">
-                                <Menu.Item key="11">
-                                    <Link to="/spin">Spin加载中</Link></Menu.Item>
-                                <Menu.Item key="12">
-                                    <Link to="progress">Progress进度条</Link>
-                                </Menu.Item>
-                            </SubMenu>
+                        </SubMenu>
+                        <SubMenu key="sub3" title={
+                        <span>
+                            <Icon type="message" />
+                            <span>加载提示</span>
+                        </span>}>
+                            <Menu.Item key="11">
+                                <Link to="/spin">Spin加载中</Link></Menu.Item>
+                            <Menu.Item key="12">
+                                <Link to="progress">Progress进度条</Link>
+                            </Menu.Item>
                         </SubMenu>
                     </Menu>
                 </Sider>

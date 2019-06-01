@@ -1,7 +1,11 @@
 @import '~antd/dist/antd.css';
 .entryWrap{
+  position: absolute;
+  top:0;
+  bottom:0;
+  min-width: 1000px;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 .fade-enter {
   opacity: 0;
