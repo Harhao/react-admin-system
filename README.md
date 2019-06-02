@@ -21,12 +21,12 @@
 
 1.进入项目根目录，安装依赖:尽量使用cnpm安装项目依赖，npm安装比较慢，而且容易出现安装失败情况
 ```bash
-  cnpm install
+ cnpm install
 ```
 2.运行以下命令启动程序
  
 ```bash
-  npm start
+npm start
 ```
 ## License
 [MIT](http://opensource.org/licenses/MIT)
