@@ -8,7 +8,6 @@ import Index from './views/Index';
 import PrivateRoute from './router/PrivateRoute';
 import NoMatch from './views/NoMatch';
 import './App.css';
-
 function App() {
   return (
     <Provider store={store}>
@@ -29,5 +28,4 @@ function App() {
     </Provider>
   );
 }
-
 export default App;

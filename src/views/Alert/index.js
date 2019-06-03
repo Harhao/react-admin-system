@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import { message, Button } from 'antd';
 import { Alert } from 'antd';
 export default class Alerts extends Component{
     render(){

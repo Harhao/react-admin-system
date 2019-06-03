@@ -1,14 +1,9 @@
-import axios from "axios";
-import {
-    fakeAuth
-} from '../util/fakeAuth';
-import {
-    message as Message
-} from 'antd';
-import {
-    timeout,
-    baseURL
-} from "./config.js";
+import axios from "axios"; 
+import {fakeAuth} from '../util/fakeAuth';
+import {BrowserRouter} from 'react-router-dom'
+import {message as Message} from 'antd';
+import {timeout,baseURL} from "./config.js";
+const history = new BrowserRouter();
 axios.defaults.timeout = timeout;
 axios.defaults.baseURL = baseURL;
 axios.interceptors.request.use(
@@ -27,13 +22,18 @@ axios.interceptors.response.use(
         return response;
     },
     error => {
+        console.log(history);
+        fakeAuth.signout();
+        history.push('/login');
         if (error.response) {
             switch (error.response.status) {
                 case 401:
+                    fakeAuth.signout() && history.replace('/login');break;
+                default:
             }
             const message = error.response.data.message ?
                 error.response.data.message :
-                error.response.status == 401 ?
+                error.response.status === 401 ?
                 "登录过期，请重新登录" :
                 "服务器异常";
             Message.error(message);
@@ -41,12 +41,12 @@ axios.interceptors.response.use(
         return Promise.reject(error);
     }
 );
-export const gl_ajax = params => {
+const gl_ajax = params => {
     return axios({
             method: params.method.toLowerCase(),
             url: `${axios.defaults.baseURL}${params.url}`,
-            data: params.method != "get" ? params.data : "",
-            params: params.method == "get" ? params.data : "",
+            data: params.method !== "get" ? params.data : "",
+            params: params.method === "get" ? params.data : "",
             responseType: params.file ? "blob" : ""
         })
         .then(res => {
@@ -56,3 +56,4 @@ export const gl_ajax = params => {
             params.error && params.error(err);
         });
 };
+export default gl_ajax;
