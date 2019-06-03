@@ -12,11 +12,11 @@
 #### 二、现阶段运行效果
 - 登录
 
-![login](https://github.com/Harhao/react-admin-system/blob/master/screenShot/dataChart.png)
+![login](https://github.com/Harhao/react-admin-system/blob/master/screenShot/login.png)
 
 - 图表展示
 
-![dataChart](https://github.com/Harhao/react-admin-system/blob/master/screenShot/index.png)
+![dataChart](https://github.com/Harhao/react-admin-system/blob/master/screenShot/dataCount.png)
 #### 三、安装依赖并运行程序
 
 1.进入项目根目录，安装依赖:尽量使用cnpm安装项目依赖，npm安装比较慢，而且容易出现安装失败情况
