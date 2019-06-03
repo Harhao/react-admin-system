@@ -26,7 +26,9 @@ axios.interceptors.response.use(
         if (error.response) {
             switch (error.response.status) {
                 case 401:
-                    // fakeAuth.signout() && history.replace('/login');break;
+                    fakeAuth.signout();
+                    redirect();
+                    break;
                 default:
             }
             const message = error.response.data.message ?
