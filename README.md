@@ -8,6 +8,7 @@
     AntDesign:v3.19.2
     react-redux: v7.0.3
     react-router-dom: v5.0.0
+    bizcharts: v3.5.3
   ```
 #### 二、现阶段运行效果
 - 登录
@@ -17,6 +18,15 @@
 - 图表展示
 
 ![dataChart](https://github.com/Harhao/react-admin-system/blob/master/screenShot/dataCount.png)
+- message展示
+
+![message](https://github.com/Harhao/react-admin-system/blob/master/screenShot/message.png)
+- progress
+
+![progress](https://github.com/Harhao/react-admin-system/blob/master/screenShot/progress.png)
+- spin
+
+![spin](https://github.com/Harhao/react-admin-system/blob/master/screenShot/spin.png)
 #### 三、安装依赖并运行程序
 
 1.进入项目根目录，安装依赖:尽量使用cnpm安装项目依赖，npm安装比较慢，而且容易出现安装失败情况
