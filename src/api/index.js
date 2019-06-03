@@ -1,9 +1,8 @@
 import axios from "axios"; 
 import {fakeAuth} from '../util/fakeAuth';
-import {BrowserRouter} from 'react-router-dom'
 import {message as Message} from 'antd';
 import {timeout,baseURL} from "./config.js";
-const history = new BrowserRouter();
+import redirect from './redirect';
 axios.defaults.timeout = timeout;
 axios.defaults.baseURL = baseURL;
 axios.interceptors.request.use(
@@ -22,13 +21,12 @@ axios.interceptors.response.use(
         return response;
     },
     error => {
-        console.log(history);
         fakeAuth.signout();
-        history.push('/login');
+        redirect();
         if (error.response) {
             switch (error.response.status) {
                 case 401:
-                    fakeAuth.signout() && history.replace('/login');break;
+                    // fakeAuth.signout() && history.replace('/login');break;
                 default:
             }
             const message = error.response.data.message ?
