@@ -61,15 +61,15 @@ export default class SiderNav extends Component{
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="5">
-                            <Link to="/form">
+                            <Link to="/checkbox">
                                 <Icon type="folder" />
-                                <span>axios封装</span>
+                                <span>Checkbox多选框</span>
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="6">
-                            <Link to="/form">
+                            <Link to="/cascader">
                                 <Icon type="link" />
-                                <span>react-router</span>
+                                <span>Cascader级联选择</span>
                             </Link>
                         </Menu.Item>
                         <SubMenu

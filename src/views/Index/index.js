@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Layout,Button} from 'antd';
+import { Layout} from 'antd';
 import ContentMain from '../../components/ContentMain';
 import SiderNav from '../../components/SiderNav';
 import Avatar from '../Avatar'

@@ -77,9 +77,28 @@ export default class Basic extends Component{
             },
           ];
         return (
-            <div className="tableWrap">
-                <Table columns={columns} dataSource={data} />
-            </div>
-        )
+          <div className="messageWrap">
+             <div className="labelTitle">
+                Table表格
+             </div>
+             <div className="displayCode clearfix">
+                  <div className="codeSection">
+                      <div className="example">
+                        <Table columns={columns} dataSource={data} />
+                      </div>
+                  </div>
+                  <div className="codeSection">
+                      <div className="example">
+                        <Table columns={columns} dataSource={data} size="small" />
+                      </div>
+                  </div>
+                  <div className="codeSection">
+                      <div className="example">
+                        <Table columns={columns} dataSource={data} scroll={{ x: 1500, y: 300 }} />
+                      </div>
+                  </div>
+              </div>
+          </div>
+      )
     }
 }

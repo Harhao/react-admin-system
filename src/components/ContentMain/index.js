@@ -8,6 +8,8 @@ import Message from '../../views/Message';
 import Alert from '../../views/Alert';
 import Spin from '../../views/Spin';
 import Progress from '../../views/Progress';
+import Checkbox from '../../views/Checkbox';
+import Cascader from '../../views/Cascader';
 import './index.css';
 class ContentMain extends Component{
     render(){
@@ -21,6 +23,8 @@ class ContentMain extends Component{
                     <PrivateRoute path="/message" exact component = {Message}/>
                     <PrivateRoute path="/spin" exact component = {Spin}/>
                     <PrivateRoute path="/progress" exact component = {Progress}/>
+                    <PrivateRoute path="/checkbox" exact component = {Checkbox}/>
+                    <PrivateRoute path="/cascader" exact component = {Cascader}/>
                 </Switch>
             </div>
         )
