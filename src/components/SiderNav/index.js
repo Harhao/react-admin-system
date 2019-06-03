@@ -19,7 +19,7 @@ export default class SiderNav extends Component{
         return(
             <Sider
                     breakpoint="lg"
-                    collapsedWidth="0"
+                    collapsedWidth="50"
                     onBreakpoint={broken => {
                         console.log(broken);
                     }}
@@ -33,7 +33,7 @@ export default class SiderNav extends Component{
                     </div>
                     <Menu
                         defaultSelectedKeys={['1']}
-                        defaultOpenKeys={['sub1']}
+                        defaultOpenKeys={['sub1','sub2']}
                         mode="inline"
                         theme="dark"
                         inlineCollapsed={this.state.collapsed}
@@ -73,7 +73,7 @@ export default class SiderNav extends Component{
                             </Link>
                         </Menu.Item>
                         <SubMenu
-                            key="sub2"
+                            key="sub1"
                             title={
                             <span>
                                 <Icon type="appstore" />
@@ -88,7 +88,7 @@ export default class SiderNav extends Component{
                                 <Link to="/message">Message全局提示</Link>
                             </Menu.Item>
                         </SubMenu>
-                        <SubMenu key="sub3" title={
+                        <SubMenu key="sub2" title={
                         <span>
                             <Icon type="message" />
                             <span>加载提示</span>
