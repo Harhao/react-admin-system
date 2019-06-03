@@ -8,6 +8,7 @@
     AntDesign:v3.19.2
     react-redux: v7.0.3
     react-router-dom: v5.0.0
+    bizcharts: v3.5.3
   ```
 #### 二、现阶段运行效果
 - 登录
