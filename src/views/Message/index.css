@@ -20,15 +20,18 @@
 }
 
 .displayCode .codeSection {
+    display: flex;
+    flex-direction: column;
     float: left;
     width: 48%;
-    height: 14rem;
+    min-height: 14rem;
     margin: 0 2% 1% 0;
     border: 1px solid #ebedf0;
 }
 
 .codeSection .example {
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem;
+    flex: 1;
 }
 
 .codeSection .intro {
@@ -37,6 +40,8 @@
     margin-bottom: 1.5rem;
 }
 .codeSection .usage{
+    height: 3rem;
+    line-height: 3rem;
     border-top:1px dashed #ebedf0;
     padding-left: 5%;
 }

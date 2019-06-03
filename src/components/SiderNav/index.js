@@ -19,7 +19,7 @@ export default class SiderNav extends Component{
         return(
             <Sider
                     breakpoint="lg"
-                    collapsedWidth="50"
+                    collapsedWidth="80"
                     onBreakpoint={broken => {
                         console.log(broken);
                     }}
@@ -29,14 +29,14 @@ export default class SiderNav extends Component{
                 >
                     <div className="logoIcon">
                         <img src={Logo} alt="system" className ="Icon"/>
-                        <span className="title">RtSystem</span>
+                        {/* <span className="title">RtSystem</span> */}
                     </div>
                     <Menu
                         defaultSelectedKeys={['1']}
                         defaultOpenKeys={['sub1','sub2']}
                         mode="inline"
                         theme="dark"
-                        inlineCollapsed={this.state.collapsed}
+                        collapsed={this.state.collapsed.toString()}
                     >
                         <Menu.Item key="1">
                             <Link to="/dataCount">
@@ -57,7 +57,7 @@ export default class SiderNav extends Component{
                         <Menu.Item key="3">
                             <Link to="/form">
                                 <Icon type="inbox" />
-                                <span>输入组件</span>
+                                <span>Input输入组件</span>
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="5">

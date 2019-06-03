@@ -18,6 +18,12 @@ export default class Message extends Component{
         const hide = message.loading('loading ...', 0);
         setTimeout(hide, 2500);
     }
+    success = () => {
+        message
+          .loading('Action in progress..', 2.5)
+          .then(() => message.success('Loading finished', 2.5))
+          .then(() => message.info('Loading finished is finished', 2.5));
+    };
     render(){
         return (
             <div className="messageWrap">
@@ -85,7 +91,7 @@ export default class Message extends Component{
                     </div>
                     <div className="codeSection">
                         <div className="example">
-                            <Button onClick={this.loading} className="btn">loading</Button>
+                            <Button onClick={this.success}>Display sequential messages</Button>
                         </div>
                         <div className="split">
                             <div className="small"></div>
@@ -93,7 +99,7 @@ export default class Message extends Component{
                             <div className="line"></div>
                         </div>
                         <div className="intro">
-                            进行全局 loading，异步自行移除。
+                            可以通过 then 接口在关闭后运行 callback 。以上用例将在每个 message 将要结束时通过 then 显示新的 message 
                         </div>
                         <div className="usage">使用方法</div>
                     </div>

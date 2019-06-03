@@ -11,7 +11,7 @@ export default class Index extends Component {
         <Layout>
             <SiderNav/>
             <Layout>
-                <Header style={{ background: '#fff', padding: 0 }}>
+                <Header style={{ background: '#fff', padding: 0 }} >
                     <Avatar/>
                 </Header>
                 <Content style={{ margin: '24px 16px 0' }}>
