@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Layout,Button} from 'antd';
+import { Layout} from 'antd';
 import ContentMain from '../../components/ContentMain';
 import SiderNav from '../../components/SiderNav';
 import Avatar from '../Avatar'
@@ -16,7 +16,6 @@ export default class Index extends Component {
                 </Header>
                 <Content style={{ margin: '24px 16px 0' }}>
                     <ContentMain/>
-                    <Button onClick={this.handleClick.bind(this)}></Button>
                     <Footer style={{ textAlign: 'center'}}>admin system ©2019 Created by Harhao</Footer>
                 </Content>              
             </Layout>
