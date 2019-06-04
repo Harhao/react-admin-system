@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Switch,withRouter} from 'react-router-dom';
+import {Switch,withRouter,Route} from 'react-router-dom';
 import PrivateRoute from '../../router/PrivateRoute';
 import DataChart from '../../views/DataChart';
 import Basic from '../../views/Basic';
@@ -10,6 +10,7 @@ import Spin from '../../views/Spin';
 import Progress from '../../views/Progress';
 import Checkbox from '../../views/Checkbox';
 import Cascader from '../../views/Cascader';
+import NoMatch from '../../views/NoMatch';
 import './index.css';
 class ContentMain extends Component{
     render(){
@@ -25,6 +26,7 @@ class ContentMain extends Component{
                     <PrivateRoute path="/progress" exact component = {Progress}/>
                     <PrivateRoute path="/checkbox" exact component = {Checkbox}/>
                     <PrivateRoute path="/cascader" exact component = {Cascader}/>
+                    <Route component={NoMatch}/>
                 </Switch>
             </div>
         )
