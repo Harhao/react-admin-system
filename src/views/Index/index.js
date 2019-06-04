@@ -4,22 +4,8 @@ import ContentMain from '../../components/ContentMain';
 import SiderNav from '../../components/SiderNav';
 import Avatar from '../Avatar'
 import './index.css';
-import gl_ajax from '../../api/index';
 const { Header, Content, Footer} = Layout;
 export default class Index extends Component {
-    handleClick(){
-        gl_ajax({
-            method:'get',
-            url:'/hello',
-            data:{},
-            success(res){
-
-            },
-            error(err){
-
-            }
-        });
-    }
   render() {
     return (
         <Layout>
