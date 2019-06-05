@@ -7,12 +7,11 @@ import Login from './views/Login/login';
 import Index from './views/Index';
 import PrivateRoute from './router/PrivateRoute';
 import NoMatch from './views/NoMatch';
-import history from './api/history';
 import './App.css';
 function App() {
   return (
     <Provider store={store}>
-      <Router basename="/echo" history={history}>
+      <Router basename="/echo">
           <div className="entryWrap">
               <CSSTransition
                 classNames="fade"

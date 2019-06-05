@@ -5,7 +5,18 @@ import Line from '../../components/Line';
 import Map from '../../components/Map';
 import AreaMap from '../../components/AreaMap';
 import './index.css';
+import gl_ajax from '../../api/index';
+import {Button} from 'antd';
 export default class DataChart extends Component{
+    handleClick (){
+        gl_ajax({
+            method:'get',
+            url:'/api/v1/hello',
+            data:{},
+            success(res){},
+            error(err){}
+        })
+    }
     render(){
         return (
             <div className="chartWrap clearfix">
@@ -26,6 +37,7 @@ export default class DataChart extends Component{
                         <AreaMap/>
                     </div>
                 </div>
+                <Button onClick={this.handleClick.bind(this)}>click</Button>
             </div>
         )
     }

@@ -2,7 +2,7 @@ import axios from "axios";
 import {fakeAuth} from '../util/fakeAuth';
 import {message as Message} from 'antd';
 import {timeout,baseURL} from "./config.js";
-import history from './history';
+import {store} from '../redux/index';
 axios.defaults.timeout = timeout;
 axios.defaults.baseURL = baseURL;
 axios.interceptors.request.use(
@@ -21,11 +21,12 @@ axios.interceptors.response.use(
         return response;
     },
     error => {
+        store.dispatch({type:'CHANGETIMEOUT'})
         if (error.response) {
             switch (error.response.status) {
                 case 401:
-                    fakeAuth.signout();
-                    history.push('/login');
+                    // fakeAuth.signout();
+                    // history.push('/login');
                     break;
                 default:
             }
