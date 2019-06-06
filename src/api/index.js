@@ -21,7 +21,8 @@ axios.interceptors.response.use(
         return response;
     },
     error => {
-        store.dispatch({type:'CHANGETIMEOUT'})
+        // store.dispatch({type:'CHANGETIMEOUT'})
+        store.dispatch({type:'CHANGETIMEOUT'});
         if (error.response) {
             switch (error.response.status) {
                 case 401:

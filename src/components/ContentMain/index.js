@@ -10,9 +10,9 @@ class ContentMain extends Component{
             <div className="routeWrap">
                 <Switch>
                     {
-                        routes.map(item=>{
+                        routes.map((item,index)=>{
                             return (
-                                item.path?<PrivateRoute path={item.path} exact component={item.component}/>:<Route component={NoMatch}/>
+                                item.path?<PrivateRoute path={item.path} exact component={item.component} key={index}/>:<Route component={NoMatch}/>
                             )
                         })
                     }
