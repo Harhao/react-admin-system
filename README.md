@@ -1,5 +1,7 @@
 ## React-Admin-System后台管理系统
-
+[![Build Status](https://travis-ci.com/Harhao/react-admin-system.svg?branch=master)](https://travis-ci.com/Harhao/react-admin-system)
+[![](https://img.shields.io/badge/License-MIT-brightgreen)](https://img.shields.io/badge/License-MIT-brightgreenm)
+[![](https://img.shields.io/badge/version-v1.0.0-brightgreen)](https://img.shields.io/badge/version-1.0.0-brightgreen)
 #### 一、开发环境
   ```
     操作系统：Window 10
