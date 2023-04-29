@@ -12,11 +12,12 @@ class ContentMain extends Component{
                     {
                         routes.map(item=>{
                             return (
-                                item.path?<PrivateRoute path={item.path} exact component={item.component}/>:<Route component={NoMatch}/>
+                                <PrivateRoute path={item.path} exact component={item.component}/>
+                                // item.path?<PrivateRoute path={item.path} exact component={item.component}/>:<Route component={NoMatch}/>
                             )
                         })
                     }
-                    
+                    <Route component={NoMatch}/>
                 </Switch>
             </div>
         )
